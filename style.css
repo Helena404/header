@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
-
+body {
+  font-family: 'PT Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: white;
+}
 a,
 button,
 input,
@@ -14,11 +20,6 @@ img {
 }
 
 .header {
-  font-family: 'PT Mono', monospace;
-  font-weight: 400;
-  font-style: normal;
-  background-color: black;
-  color: white;
 }
 .header__container {
   max-width: 1180px;
@@ -51,9 +52,6 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: white;
-}
-.menu__link:active {
-  color: red;
 }
 .search-box__input {
   background-color: transparent;
@@ -107,20 +105,49 @@ img {
   height: 32px;
 }
 textarea {
-  color: white; /* белый цвет текста */
-  background-color: black; /* черный цвет фона */
-  border: 2px solid white; /* белая граница */
+  background-color: transparent; /* черный цвет фона */
+  border: 1px solid #595e75; /* обводка*/
   outline: none; /* убираем контур фокуса */
   resize: none; /* запрещаем изменение размеров textarea */
+  color: #f7f7f7;
+  border-radius: 100px; /* радиус границ */
+  padding: 10px; /* отступы внутри*/
+  width: 335px;
+  height: 40px;
+}
+textarea::placeholder {
+  /* Стили для плейсхолдера */
+  display: flex;
+  color: gray;
+  align-items: center;
 }
 
-textarea:focus {
-  /* Стили при фокусе */
+.comment-input {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  margin-inline: auto; /*центрируем по вертикали*/
+  border: 1px solid #595e75; /* обводка*/
+  border-radius: 10px;
+}
+
+.comment-input input[type='text'] {
+  flex: 1;
+  color: #fff;
+  padding: 10px;
+  background-color: transparent; /* черный цвет фона */
+  margin-right: 10px;
+}
+.comment-input input[type='text']:focus {
   border: none; /* убираем границу */
   outline: none; /* убираем контур фокуса */
 }
 
-textarea::placeholder {
-  /* Стили для плейсхолдера */
-  color: gray;
+.comment-input button[type='submit'] {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
