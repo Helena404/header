@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="reset.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__logo">
+				<img src="images/logo.svg" alt="Логотип" class="logo__image">
+			</div>
+			<nav class="menu header__menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link">Навигация</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Твои подписки</a></li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Маркетплейс</a>
+						<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M4.63965 15.8603C4.93255 16.1532 5.40742 16.1532 5.70031 15.8603L14.0033 7.55735V13.6634C14.0033 14.0776 14.3391 14.4134 14.7533 14.4134C15.1675 14.4134 15.5033 14.0776 15.5033 13.6634V5.74669C15.5033 5.33247 15.1675 4.99669 14.7533 4.99669H6.83665C6.42244 4.99669 6.08665 5.33247 6.08665 5.74669C6.08665 6.1609 6.42244 6.49669 6.83665 6.49669H12.9427L4.63965 14.7997C4.34676 15.0926 4.34676 15.5675 4.63965 15.8603Z"
+								fill="#F7F7F7" />
+						</svg>
+
+					</li>
+				</ul>
+			</nav>
+			<div class="search-box header__search-box">
+				<form action="/search" method="GET" class="search-box__form">
+					<input type="text" name="query" placeholder="Поиск..." class="search-box__input">
+				</form>
+			</div>
+			<div class="header__actions">
+				<button class="notifications__button">
+					<img src="images/bell.svg" alt="Уведомления" class="notifications__icon">
+				</button>
+				<button class="create__button">Создать Айтем</button>
+				<button class="round__button">
+					<img src="images/graph.png" alt="График" class="round__button-icon">
+				</button>
+			</div>
+
+		</div>
+	</header>
+
+	<br><br><br><br><br>
+	<label for="comment">Оставьте комментарий:</label><br>
+	<textarea id="comment" name="comment" rows="4" cols="50" placeholder="Comment"></textarea>
+</body>
+
+</html>

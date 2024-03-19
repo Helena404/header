@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: 0.2s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  font-family: 'PT Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: white;
+}
+.header__container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  height: 70px;
+}
+.header__logo {
+  cursor: pointer;
+}
+.menu__list {
+  display: flex;
+  column-gap: 30px;
+}
+.menu__item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.menu__link {
+  display: inline-flex; /*для увеличения площади нажатия на ссылки*/
+  column-column-gap: 5px;
+  height: 70px;
+  align-items: center;
+  text-decoration: none;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: white;
+}
+.menu__link:active {
+  color: red;
+}
+.search-box__input {
+  background-color: transparent;
+  background-image: url('images/search.svg'); /* добавляем изображение лупы */
+  background-size: 20px; /* размер  лупы */
+  background-repeat: no-repeat;
+  background-position: 10px center; /* позиция изображения внутри input */
+  color: #f7f7f7;
+  border: 1px solid #595e75; /* обводка*/
+  border-radius: 100px; /* радиус границ */
+  padding: 8px 34px; /* отступы внутри input, с учетом картинки лупы */
+  width: 335px; /* ширина input */
+}
+/* Стили для иконки лупы внутри input */
+.search-box__input::placeholder {
+  /* добавить нужный шрифт, размер для плейсхолдера*/
+}
+.search-box__input:focus {
+  outline: none; /* убираем контур фокуса */
+}
+
+.header__actions {
+  display: flex;
+  column-gap: 20px;
+}
+.notifications__button {
+  background: none; /* Убираем фон кнопки */
+  border: none; /* Убираем границы */
+}
+.create__button {
+  background-color: #353c4d;
+  border: none;
+  color: #fff;
+  letter-spacing: 2%;
+  line-height: 111%;
+  text-transform: uppercase;
+  padding: 8px 16px;
+}
+.create__button:hover {
+  background-color: #3b4153;
+}
+
+.round__button {
+  background: none; /* Убираем фон кнопки */
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; /* Горизонтальное выравнивание по центру */
+  align-items: center; /* Вертикальное выравнивание по центру */
+  width: 32px;
+  height: 32px;
+}
+textarea {
+  color: white; /* белый цвет текста */
+  background-color: black; /* черный цвет фона */
+  border: 2px solid white; /* белая граница */
+  outline: none; /* убираем контур фокуса */
+  resize: none; /* запрещаем изменение размеров textarea */
+}
+
+textarea:focus {
+  /* Стили при фокусе */
+  border: none; /* убираем границу */
+  outline: none; /* убираем контур фокуса */
+}
+
+textarea::placeholder {
+  /* Стили для плейсхолдера */
+  color: gray;
+}
